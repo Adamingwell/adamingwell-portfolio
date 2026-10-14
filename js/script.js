@@ -1,16 +1,20 @@
-console.log("Deliverable 01 script initialized.");
-
+// Software Systems 152-110-100: Interactive Client Script
 document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.getElementById("submit-btn");
-  const input = document.getElementById("student-email");
+  const submitBtn = document.getElementById("submit-btn");
+  const emailInput = document.getElementById("student-email");
+  const statusMsg = document.getElementById("status-message");
 
-  if (btn && input) {
-    btn.addEventListener("click", () => {
-      if (!input.value.trim()) {
-        alert("Please enter an email address.");
+  if (submitBtn && emailInput && statusMsg) {
+    submitBtn.addEventListener("click", () => {
+      const emailValue = emailInput.value.trim();
+
+      if (emailValue === "" || !emailValue.includes("@")) {
+        statusMsg.style.color = "#f472b6"; // magenta warning
+        statusMsg.textContent = "Please provide a valid email address.";
       } else {
-        alert("Submission received for: " + input.value);
-        input.value = "";
+        statusMsg.style.color = "#34d399"; // emerald confirmation
+        statusMsg.textContent = `Subscription confirmed for: ${emailValue}`;
+        emailInput.value = "";
       }
     });
   }
