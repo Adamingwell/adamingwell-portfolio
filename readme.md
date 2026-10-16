@@ -1,67 +1,44 @@
 # Software Systems 152-110-100 | Student Portfolio & Knowledge Base
 
-![Build Status](https://img.shields.io/badge/Status-Active%20Development-0284c7?style=for-the-badge)
-![Course](https://img.shields.io/badge/Course-Software%20Systems%20152--110--100-7c3aed?style=for-the-badge)
-![Deliverable](https://img.shields.io/badge/Deliverable-01%20Checkpoint-c026d3?style=for-the-badge)
-![Branch](https://img.shields.io/badge/Grading%20Branch-dev-059669?style=for-the-badge)
-![License](https://img.shields.io/badge/Academic-WTC%20Coursework-38bdf8?style=for-the-badge)
+**Author:** Adam Ingwell  
+**Institution:** Western Technical College  
+**Course:** Software Systems (152-110-100)  
+**Instructor:** Hannah Borreson  
+**Deliverable:** Final Project Deliverable 02 Checkpoint  
+**Target Branch:** `dev`  
 
 ---
 
-## Executive Overview
-This repository functions as a centralized personal portfolio and live laboratory archive developed for **Software Systems (152-110-100)** at **Western Technical College**, under the instruction of **Hannah Borreson**. 
-
-The application serves two concurrent operational objectives:
-1. **Student Engineering Portfolio:** Demonstrates modern frontend design, clean DOM structuring, semantic markup, and responsive UI principles through an eclectic, high-contrast visual architecture.
-2. **Coursework Knowledge Base:** Documents foundational competencies acquired across all laboratory checkpoints, including hardware architecture, Git version control, the CSS Box Model, and asynchronous JavaScript DOM manipulation.
+## Project Overview
+This website serves as a personal student engineering portfolio and an evolving course knowledge base. It highlights practical competency in semantic HTML5 structure, modular CSS Box Model layouts, Git branch management workflows, and interactive DOM manipulation via external JavaScript. The user interface features an eclectic jewel-toned dark palette (electric cyan, amethyst, fuchsia, cobalt, and emerald) designed for accessibility and high contrast without using orange.
 
 ---
 
-## Author Profile
-* **Student:** Adam Ingwell
-* **Institution:** Western Technical College
-* **Program:** IT Systems Development / Software Systems
-* **Contact:** `ingwella@students.westerntc.edu`
-* **GitHub Profile:** [https://github.com/Adamingwell](https://github.com/Adamingwell)
-* **Active Repository:** `https://github.com/Adamingwell/adamingwell-portfolio`
+## Major Website Pages & Sections
+
+1. **Portfolio Home (`index.html`)**
+   * **Hero & Identity:** Professional profile image, academic title, and direct links to GitHub and course notes.
+   * **About Me:** Overview of current studies at Western Technical College, software engineering goals, and technical philosophy.
+   * **Academic Highlights:** Summaries of completed course labs, including PC hardware workstation architecture (Lab 01) and JavaScript DOM diagnostics (Lab 07).
+   * **Developer Dispatch (Interactive):** Form component utilizing external JavaScript for real-time input validation and dynamic page content updates.
+
+2. **Course Knowledge Base (`pages/notes.html`)**
+   * **Version Control Notes:** Principles of distributed Git workflows, feature branch isolation, staging, and remote syncing.
+   * **CSS Specificity & Box Model:** Reference guide covering selector weights, cascading priority, and box model spacing (margin, border, padding, content).
+   * **JavaScript Runtime Mechanics:** Documentation of DOM traversal, strict equality operators (`===`), and event-driven scripting.
 
 ---
 
-## Deliverable 01 Compliance Matrix
-
-| Requirement Category | Rubric Specification | Implementation Verification |
-| :--- | :--- | :--- |
-| **Repository Naming** | Must contain student name without spaces | `adamingwell-portfolio` |
-| **Branch Isolation** | Development completed and submitted via `dev` | Active on remote `dev` branch |
-| **Root File Placement** | `index.html` & `README.md` in repository root | Verified in `/` |
-| **Subdirectory Structure** | Specific folders: `./css`, `./js`, `./images`, `./pages` | Strict 4-folder separation enforced |
-| **Heading Hierarchy** | At least one heading (`<h1>` through `<h6>`) | Implemented `<h1>`, `<h2>`, `<h3>`, `<h4>` |
-| **Typography & Text** | At least one paragraph (`<p>`) and line break (`<br>`) | Present across Hero and About sections |
-| **Hyperlinks** | At least one functional anchor (`<a>` with `href`) | Outbound GitHub profile & internal notes route |
-| **Media Assets** | At least one image (`<img>` with `src` and `alt`) | `images/headshot.png` (renders 140x140px) |
-| **Structural Containers**| At least one `<div>` tag | Semantic flex/grid wrapper containers |
-| **Interactive Form** | At least one `<button>` and `<input>` (typed) | `<input type="email">` and dispatch `<button>` |
-| **CSS Properties** | `color`, `background-color`, `font-family`, `font-size`, `width`, `height` | Fully declared in `css/styles.css` |
-| **CSS Box Model** | `margin`, `padding`, `border` | Fully demonstrated on all `.card` elements |
+## JavaScript Deliverable 02 Compliance
+* **External Script:** Hosted at `./js/script.js` and loaded before `</body>`.
+* **Variables:** Declared using `let` (submission counter) and `const` (DOM element handles).
+* **Functions:** Structured execution via `isValidEmail()` and `handleSubscription()`.
+* **Element Querying:** Elements retrieved using `document.querySelector('#submit-btn')`.
+* **Event Handling:** Explicit `click` event bound to `<button id="submit-btn">`.
+* **Decision Logic:** Implemented using `if / else` conditional branches.
+* **Content Modification:** Dynamically mutates `#status-message` text and color attributes based on user input.
 
 ---
 
-## Repository Architecture
-
-```text
-adamingwell-portfolio/
-│
-├── index.html                  # Root landing page & student portfolio
-├── README.md                   # Repository documentation & compliance matrix
-│
-├── css/
-│   └── styles.css              # Custom styling (Eclectic palette, CSS Box Model)
-│
-├── js/
-│   └── script.js               # Client-side input validation & event listeners
-│
-├── images/
-│   └── headshot.png            # Profile asset rendered via index.html
-│
-└── pages/
-    └── notes.html              # Coursework archive & technical references
+## AI Usage Statement
+AI tools were used strictly for code verification, debugging assistance, and testing edge cases during development. All website architecture, semantic HTML structure, custom CSS styling, and JavaScript event logic were written, implemented, and reviewed directly by the student before being verified across local browser environments and pushed via the Git CLI.
